@@ -1,0 +1,84 @@
+/* --- Testimonial Slider Base --- */
+.ts-slider {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.ts-slide {
+  outline: none;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.ts-thumb {
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.ts-slide h3 {
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.ts-job {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.ts-bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* --- Slick Dots Styling --- */
+.slick-dots {
+  margin-top: 25px;
+  list-style: none;
+  display: flex !important;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+}
+
+.slick-dots li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.slick-dots li button {
+  display: none;
+}
+
+/* Active Dot */
+.slick-dots li.slick-active {
+  background: #0073aa; /* WordPress blue */
+  transform: scale(1.2);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .ts-thumb {
+    width: 90px;
+    height: 90px;
+  }
+  .ts-bio {
+    font-size: 0.95rem;
+  }
+}
