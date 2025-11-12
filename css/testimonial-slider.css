@@ -82,3 +82,32 @@
     font-size: 0.95rem;
   }
 }
+
+
+.ts-slider .ts-slide {
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.ts-slider .ts-thumb {
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.slick-dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.slick-dots li button:before {
+  color: #999;
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0073aa; /* WordPress blue */
+}
